@@ -1,0 +1,41 @@
+
+.container{
+display:flex;
+height:600px;
+width:100%;
+border: 5px solid #dccabc;
+border-radius: 20px;
+justify-content: center;
+text-align: center;
+
+
+}
+
+.formContainer{
+    font-family: "Caveat", cursive;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+    width:400px;
+    height:350px;
+    background-image: url("images/plantborder.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:30px;
+    
+}
+#form{
+    width:380px;
+    height: 120px;
+    text-align:right;
+    padding-top: 115px;
+}
+input,button{
+    border-radius: 5px;
+    font-size:16px;
+}
+
+#submit{
+    background-color: #dcdabc;
+    border: 2px solid rgb(4, 60, 4);
+}

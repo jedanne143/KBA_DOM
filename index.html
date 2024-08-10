@@ -10,26 +10,58 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap" rel="stylesheet">
-    </head>
+</head>
     <body>
-      <div class="container" id="user">
-        <!-- <img id="uBorder" src="images/plantborder.png" alt="plant border"> -->
+      <div class="container">
         <div class="formContainer">
             <div id="form">
-            <label for="username">Username</label>
-            <input id="username" type="text" maxlength="20">
+            <label for="name">Name</label>
+            <input 
+            id="name" 
+            name="usename"
+            type="text" 
+            maxlength="10" 
+            placeholder="Use 4-12 letters only" 
+            pattern="^[a-zA-Z]{4,12}$" 
+            required>
             <br>
             <label for="pw">Passcode: &nbsp</label>
-            <input id="passcode" type="password" pattern="\d{4}" maxlength="4" placeholder="Input 4-digit code">
+            <input 
+            id="pw" 
+            name="password"
+            type="password" 
+            maxlength="4"
+            placeholder="Enter 4-digit code" 
+            pattern="\d{4}" 
+            required>
             <br>
-            <label for="pw">Re-enter Passcode:</label>
-            <input id="passcode2" type="password" pattern="\d{4}" maxlength="4" placeholder="Input 4-digit code">
+            <label for="pw2">Re-enter Passcode:</label>
+            <input 
+            id="pw2" 
+            name="password"
+            type="password" 
+            maxlength="4" 
+            placeholder="Re-enter 4-digit code" 
+            pattern="\d{4}" 
+            required>
             <br>
-            <button id="submit"> Submit</button>
+            <input 
+            id="submit" 
+            type="submit" 
+            value="submit">
             </div>
         </div>
+        <div id="errorResult"> </div>
       </div>
+
+      <div class="mainContainer">
+        <div id="greeting"> 
+          Hello <span id="greetUser"></span> 
+        </div>
+
+      </div>
+      
         
-        <script src="" async defer></script>
+        <script src="app.js" async defer></script>
     </body>
 </html>

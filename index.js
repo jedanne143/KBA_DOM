@@ -1,3 +1,5 @@
+//-------------Script for Form Page-------------------
+
 const username = document.getElementById("name");
 let pw = document.getElementById("pw");
 let pw2 = document.getElementById("pw2")
@@ -80,3 +82,4 @@ if((pwRegex.test(pw2.value)) && pw2.value === pw.value){
     } 
     
  }
+

@@ -122,9 +122,19 @@ justify-content: center;
 
 #stickyDate{
     display:flex;
+    position:relative;
     height: 80px;
-    border:1px solid black;
     min-width:100px;
-
 }
 
+#currentDate{
+    display:flex;
+    position:absolute;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    top:30px;
+    margin-left: 70px;
+    font-family: "Caveat", cursive;
+    color: rgb(1, 74, 1)
+}

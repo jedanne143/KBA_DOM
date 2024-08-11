@@ -8,6 +8,23 @@
         const name =nameInput.value;
        alert("Welcome!")
        document.getElementById("greetLine").innerHTML ="Hello " + name +"!";
+       const dateToday = document.getElementById("currentDate")
+       //function for formatted date
+       function getFormattedDate() {
+        const today = new Date();
+    
+        // Define options for formatting
+        const options = {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric'
+        };
+
+        // Format the date using toLocaleDateString with the specified options
+        return today.toLocaleDateString(undefined, options);
+    }
+
+       dateToday.textContent = getFormattedDate();
     }
 });
 

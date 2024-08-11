@@ -7,8 +7,6 @@ let correct = [];
 
 document.getElementById("submit").onclick = function (e) {
     e.preventDefault() ;
-
-
  // Clear any existing error messages
      error.innerHTML = "";
      username.style.backgroundColor = "";
@@ -75,6 +73,10 @@ if((pwRegex.test(pw2.value)) && pw2.value === pw.value){
         error.appendChild(ePw2);
         ePw2.style.backgroundColor = "#E5C4D3";
     }
-   
- }
+
+    //to change content
+    if (correct.length === 3) {
+        window.location.href ="notes.html"
+    } 
     
+ }

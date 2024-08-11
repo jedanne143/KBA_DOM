@@ -1,29 +1,3 @@
-/* MediaQuery for small devices */
-@media (max-width: 700px){
-    .pageContainer{
-        display:flex;
-        height:auto;
-        width:100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .note{
-       display:flex;
-        width:100%;
-        height:auto;
-        padding:20px;
-    }
-    #contentContainer{
-        flex-direction: column;
-
-    }
-    
-    #currentDate{
-        margin-top:30px;
-    }
-
-}
-
 .container{
 display:flex;
 flex-direction: column;
@@ -127,7 +101,7 @@ justify-content: center;
     flex-direction: row;
     width:auto;
     height: 180px;
-    margin:10px;
+    margin:30px;
 }
 #greetContainer{
     display:flex;
@@ -144,6 +118,7 @@ justify-content: center;
     border-radius: 5px;
     font-size: 18px;
 }
+
 #plant1{
     height: 100px;
 }
@@ -155,8 +130,8 @@ justify-content: center;
 #stickyDate{
     display:flex;
     position:relative;
-    height: 80px;
-    min-width:100px;
+    height: 100px;
+    width:auto;
 }
 
 #currentDate{
@@ -166,17 +141,51 @@ justify-content: center;
     text-align: center;
     z-index: 3;
     top:30px;
-    margin-left: 70px;
+    margin-left: 30px;
     font-family: "Caveat", cursive;
     color: rgb(1, 74, 1)
 }
 
 .addNote{
     display:flex;
-    height:300px;
-    width:300px;
+    flex-direction: column;
+    padding: 35px;
+    height:280px;
+    width:280px;
     border: 1px solid black;
     background-image: url("images/notepad.png");
     background-size: cover;
+}
+.noteGroup{
+    background: none;
+    width: 260px;
+    border-radius: 5px;
+    margin-left: 20px;
     
+}
+
+/* MediaQuery for small devices */
+@media (max-width: 700px){
+    .pageContainer{
+        display:flex;
+        height:auto;
+        width:100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .note{
+       display:flex;
+        width:100%;
+        height:auto;
+        padding:20px;
+    }
+    #contentContainer{
+        flex-direction: column;
+
+    }
+    
+    #currentDate{
+        margin-top:30px;
+    }
+
 }

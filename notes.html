@@ -17,7 +17,7 @@
                 <div id="greetContainer">
                      <img id="plant1" src="images/planty.gif">
                     <p id="greetLine">Hello 
-                    <input type="text" id="nameInput" placeholder="Type your name..." maxlength="15">
+                    <input id="nameInput" type="text" placeholder="Type your name..." minlength="2" maxlength="15" required>
                     </p>
                 </div>
                 <!-- date container -->
@@ -29,7 +29,11 @@
 
                 <!-- add notes -->
                  <div class="addNote">
-                    
+                    <label for="noteTitle">Title</label>
+                    <input id="noteTitle" class="noteGroup">
+                    <label for="noteText">Notes</label>
+                    <textarea id="noteText" class="noteGroup" rows="4">Input your notes here</textarea>
+                  
                  </div>
             </div>
 

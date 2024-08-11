@@ -6,11 +6,10 @@
   
     if (e.key === "Enter") {
         const name =nameInput.value;
-       alert("Welcome!")
        document.getElementById("greetLine").innerHTML ="Hello " + name +"!";
        const dateToday = document.getElementById("currentDate")
        //function for formatted date
-       function getFormattedDate() {
+       function getDate() {
         const today = new Date();
     
         // Define options for formatting
@@ -24,7 +23,7 @@
         return today.toLocaleDateString(undefined, options);
     }
 
-       dateToday.textContent = getFormattedDate();
+       dateToday.textContent = getDate();
     }
 });
 

@@ -1,3 +1,28 @@
+/* MediaQuery for small devices */
+@media (max-width: 700px){
+    .pageContainer{
+        display:flex;
+        height:auto;
+        width:100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .note{
+       display:flex;
+        width:100%;
+        height:auto;
+        padding:20px;
+    }
+    #contentContainer{
+        flex-direction: column;
+
+    }
+    
+    #currentDate{
+        margin-top:30px;
+    }
+
+}
 
 .container{
 display:flex;
@@ -74,12 +99,18 @@ justify-content: center;
 
 #noteContainer{
     display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
     width: 50%;
     height:600px;
     border: 4px solid #dccabc;
     border-radius: 20px;
     background-color: #dcdabc;
     min-width: 600px;
+}
+#topContainer{
+    display:flex;
+    flex-direction:row;
 }
 
 #contentContainer{
@@ -97,7 +128,6 @@ justify-content: center;
     width:auto;
     height: 180px;
     margin:10px;
- 
 }
 #greetContainer{
     display:flex;
@@ -141,27 +171,12 @@ justify-content: center;
     color: rgb(1, 74, 1)
 }
 
-
 .addNote{
     display:flex;
     height:300px;
-    width:100%;
-    border:1px solid black;
+    width:300px;
+    border: 1px solid black;
+    background-image: url("images/notepad.png");
+    background-size: cover;
     
-}
-/* MediaQuery for small devices */
-@media (max-width: 700px){
-    .pageContainer{
-        display:flex;
-        height:auto;
-        width:100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .note{
-       display:flex;
-        width:100%;
-        height:auto;
-        padding:20px;
-    }
 }

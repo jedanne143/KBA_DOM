@@ -79,6 +79,22 @@ justify-content: center;
         border-radius: 20px;
         background-color: #dcdabc;
     }
+#greetContainer{
+    display:flex;
+    flex-direction: row;
+    height: 110px;
+}
+#greetLine{
+    font-size: 25px;
+    font-family: "Caveat", cursive;
+}
+#nameInput{
+    border-radius: 5px;
+    font-size: 18px;
+}
 #plant1{
 height: 100px;
     }
+.noteContainer{
+    display: flex;
+}

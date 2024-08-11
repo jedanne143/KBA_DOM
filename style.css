@@ -68,16 +68,10 @@ justify-content: center;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
+    flex-wrap: nowrap   
 }
 
-#weatherContainer{
-    display:flex;
-    flex-direction: row;
-    width:auto;
-    height: 180px;
-    margin:10px;
- 
-}
+
 #noteContainer{
     display:flex;
     width: 50%;
@@ -96,6 +90,14 @@ justify-content: center;
     border-radius: 20px;
     background-color: #dcdabc;
     min-width: 600px;
+}
+#weatherContainer{
+    display:flex;
+    flex-direction: row;
+    width:auto;
+    height: 180px;
+    margin:10px;
+ 
 }
 #greetContainer{
     display:flex;
@@ -137,4 +139,29 @@ justify-content: center;
     margin-left: 70px;
     font-family: "Caveat", cursive;
     color: rgb(1, 74, 1)
+}
+
+
+.addNote{
+    display:flex;
+    height:300px;
+    width:100%;
+    border:1px solid black;
+    
+}
+/* MediaQuery for small devices */
+@media (max-width: 700px){
+    .pageContainer{
+        display:flex;
+        height:auto;
+        width:100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .note{
+       display:flex;
+        width:100%;
+        height:auto;
+        padding:20px;
+    }
 }

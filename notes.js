@@ -46,6 +46,7 @@ document.getElementById('createNote').addEventListener('click', function() {
         title.classList.add('note-title');
         title.textContent = noteTitle;
         title.style.fontWeight = "bold"
+        title.style.fontSize = "15px"
         note.appendChild(title);
 
         // Create and append note text element

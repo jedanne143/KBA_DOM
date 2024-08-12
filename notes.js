@@ -1,6 +1,8 @@
 
  //------------------Script for Notes Page---------------------
  const nameInput = document.getElementById("nameInput")
+
+//  Event Listener for name
  nameInput.addEventListener('keydown', function (e) {
     //check if "enter" key was pressed after typing name
   
@@ -27,5 +29,22 @@
     }
 });
 
+// Event Listener for create note button
+let createNote = document.getElementById("createNote")
+let noteTitle = document.getElementById("noteTitle")
+let noteText = document.getElementById("noteText")
 
+
+function addNote (){
+    let createNote_ = createNote.value.trim()
+    let noteTitle_ = noteTitle.value.trim()
+    
+
+
+    
+}
+
+function createNoteGroup() {
+
+}
 

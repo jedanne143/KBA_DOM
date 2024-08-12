@@ -30,21 +30,36 @@
 });
 
 // Event Listener for create note button
-let createNote = document.getElementById("createNote")
-let noteTitle = document.getElementById("noteTitle")
-let noteText = document.getElementById("noteText")
+document.getElementById('createNote').addEventListener('click', function() {
+    const noteTitle = document.getElementById('noteTitle').value.trim();
+    const noteText = document.getElementById('noteText').value.trim();
 
+    if (noteTitle && noteText) {
+        const noteContainer = document.getElementById('noteContainer');
 
-function addNote (){
-    let createNote_ = createNote.value.trim()
-    let noteTitle_ = noteTitle.value.trim()
-    
+        // Create note element
+        const note = document.createElement('div');
+        note.classList.add('note');
 
+        // Create and append title element
+        const title = document.createElement('p');
+        title.classList.add('note-title');
+        title.textContent = noteTitle;
+        title.style.fontWeight = "bold"
+        note.appendChild(title);
 
-    
-}
+        // Create and append note text element
+        const text = document.createElement('p');
+        text.textContent = noteText;
+        note.appendChild(text);
 
-function createNoteGroup() {
+        // Append the note to the note container
+        noteContainer.appendChild(note);
 
-}
-
+        // Clear input fields
+        document.getElementById('noteTitle').value = '';
+        document.getElementById('noteText').value = '';
+    } else {
+        alert('Please enter both a title and a note.');
+    }
+});

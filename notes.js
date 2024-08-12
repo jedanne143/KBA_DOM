@@ -40,6 +40,7 @@ document.getElementById('createNote').addEventListener('click', function() {
         // Create note element
         const note = document.createElement('div');
         note.classList.add('note');
+        
 
         // Create and append title element
         const title = document.createElement('p');

@@ -62,12 +62,13 @@ justify-content: center;
 .pageContainer{
     display:flex;
     flex-direction: row;
-    height:600px;
+    height:605px;
     width:100%;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+    margin-top: 20px;
 }
 
 

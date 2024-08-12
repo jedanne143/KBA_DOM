@@ -67,7 +67,7 @@ justify-content: center;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
-    flex-wrap: nowrap   
+    flex-wrap: nowrap
 }
 
 
@@ -85,6 +85,8 @@ justify-content: center;
 #topContainer{
     display:flex;
     flex-direction:row;
+    width:100%;
+    height:100px;
 }
 
 #contentContainer{
@@ -176,6 +178,13 @@ justify-content: center;
     border-radius: 10px;
     background-color: rgb(153, 153, 108);
 }
+
+/* #addedNoteContainer{
+    display: flex;
+    width:200px;
+    height: 200px;
+    border:1px solid black;
+} */
 
 
 /* MediaQuery for small devices */

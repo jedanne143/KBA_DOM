@@ -13,37 +13,40 @@
         <div class="pageContainer">
             <div class="note" id="noteContainer">
                 <div id="topContainer">
-                <!-- Greeting -->
-                <div id="greetContainer">
-                     <img id="plant1" src="images/planty.gif">
-                    <p id="greetLine">Hello 
-                    <input id="nameInput" type="text" placeholder="Type your name" minlength="2" maxlength="15" required>
-                    </p>
-                </div>
-                <!-- date container -->
-                <div id="dateContainer"> 
-                    <img id="stickyDate" src="images/sticky2.png">
-                    <p id="currentDate"></p>
-                </div>
+                    <!-- Greeting -->
+                    <div id="greetContainer">
+                        <img id="plant1" src="images/planty.gif">
+                        <p id="greetLine">Hello 
+                        <input id="nameInput" type="text" placeholder="Type your name" minlength="2" maxlength="15" required>
+                        </p>
+                    </div>
+                    <!-- date container -->
+                    <div id="dateContainer"> 
+                        <img id="stickyDate" src="images/sticky2.png">
+                        <p id="currentDate"></p>
+                    </div>
                 </div>
 
                 <!-- add notes -->
-                 <div class="addNote">
-                    <!-- Note Title -->
-                    <label class="noteLabel" for="noteTitle">Title</label>
-                    <input id="noteTitle" class="noteGroup" type="text">
-                    <!-- Notes -->
-                    <label class="noteLabel" for="noteText">Notes</label>
-                    <textarea id="noteText" class="noteGroup" rows="10" placeholder="Input your notes here..."></textarea>
+                 <div id="bottomContainer">
+                    <div class="addNote">
+                        <!-- Note Title -->
+                        <label class="noteLabel" for="noteTitle">Title</label>
+                        <input id="noteTitle" class="noteGroup" type="text">
+                        <!-- Notes -->
+                        <label class="noteLabel" for="noteText">Notes</label>
+                        <textarea id="noteText" class="noteGroup" rows="10" placeholder="Input your notes here..."></textarea>
 
-                    <br>
-                    <div><button id="createNote">Create a note</button></div>
-                </div>
+                        <br>
+                        <div><button id="createNote">Create a note</button></div>
+                    </div>
+                    <div id="addedNoteContainer">
+                    
+                    </div>
+                  </div>
             </div>
 
-            <div id="addedNoteContainer">
-                
-            </div>
+        
 
 
 

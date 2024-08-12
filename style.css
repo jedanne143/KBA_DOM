@@ -180,14 +180,19 @@
 
 #bottomContainer{
     display:flex;
+    flex-direction: row;
+    height:auto;
     width:100%;
 
 }
 #addedNoteContainer{
     display: flex;
     flex-direction: column;
-    height:auto;
-    width: 300px;
+    height: auto;
+    width:300px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    text-align: left;
 }
 
 .note{
@@ -196,14 +201,14 @@
     flex-direction: column;
     border-bottom: 1px solid brown;
     height: auto;
-    width:100%;
+    width:300px;
     font-family: "Caveat", cursive;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
 /* MediaQuery for small devices */
-@media (max-width: 800px){
+@media (max-width: 900px){
     .pageContainer{
         display:flex;
         height:auto;
@@ -218,9 +223,9 @@
         height:auto;
     }
     #weatherContainer{
-        width:auto;
+        width:500px;
         height: 180px;
-        min-width:500px;
+    
     }
     #contentContainer{
         flex-direction: column;

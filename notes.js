@@ -1,4 +1,3 @@
-
  //------------------Script for Notes Page---------------------
  const nameInput = document.getElementById("nameInput")
 
@@ -14,14 +13,12 @@
        function getDate() {
         const today = new Date();
     
-        // Define options for formatting
         const options = {
             year: 'numeric',
             month: 'numeric',
             day: 'numeric'
         };
 
-        // Format the date using toLocaleDateString with the specified options
         return today.toLocaleDateString(undefined, options);
     }
 
@@ -42,7 +39,7 @@ document.getElementById('createNote').addEventListener('click', function() {
         note.classList.add('note');
         
 
-        // Create and append title element
+        // Create title
         const title = document.createElement('p');
         title.classList.add('note-title');
         title.textContent = noteTitle;
@@ -50,7 +47,7 @@ document.getElementById('createNote').addEventListener('click', function() {
         title.style.fontSize = "15px"
         note.appendChild(title);
 
-        // Create and append note text element
+        // Create text
         const text = document.createElement('p');
         text.textContent = noteText;
         text.style.fontSize = "14px"

@@ -35,7 +35,7 @@ document.getElementById('createNote').addEventListener('click', function() {
     const noteText = document.getElementById('noteText').value.trim();
 
     if (noteTitle && noteText) {
-        const noteContainer = document.getElementById('noteContainer');
+        const addedNoteContainer = document.getElementById('addedNoteContainer');
 
         // Create note element
         const note = document.createElement('div');
@@ -56,7 +56,7 @@ document.getElementById('createNote').addEventListener('click', function() {
         note.appendChild(text);
 
         // Append the note to the note container
-        noteContainer.appendChild(note);
+        addedNoteContainer.appendChild(note);
 
         // Clear input fields
         document.getElementById('noteTitle').value = '';

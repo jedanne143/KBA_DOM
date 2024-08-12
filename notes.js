@@ -33,7 +33,7 @@
 document.getElementById('createNote').addEventListener('click', function() {
     const noteTitle = document.getElementById('noteTitle').value.trim();
     const noteText = document.getElementById('noteText').value.trim();
-
+  
     if (noteTitle && noteText) {
         const addedNoteContainer = document.getElementById('addedNoteContainer');
 

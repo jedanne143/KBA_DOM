@@ -186,24 +186,24 @@
 #addedNoteContainer{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width:100%;
-    height: 490px;
+    height:auto;
+    width: 300px;
 }
 
 .note{
     display:flex;
+    flex-wrap:wrap;
     flex-direction: column;
-    flex: 0 0 auto;
     border-bottom: 1px solid brown;
-    padding-top:5px;
     height: auto;
-    width:auto;
+    width:100%;
     font-family: "Caveat", cursive;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* MediaQuery for small devices */
-@media (max-width: 700px){
+@media (max-width: 800px){
     .pageContainer{
         display:flex;
         height:auto;
@@ -211,11 +211,11 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .note{
-       display:flex;
-        width:100%;
+
+    #noteContainer{
+        display: flex;
+        width: 100%;
         height:auto;
-        padding:20px;
     }
     #weatherContainer{
         width:auto;
@@ -230,9 +230,26 @@
         align-items: center;
 
     }
-    
+    #addedNoteContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 350px;
+        height: auto;
+        word-wrap: break-word
+    }
+    .note{
+        display: flex;
+        flex-wrap: wrap;
+        width:350px;
+        padding: 3px;
+
+    }   
     #currentDate{
         margin-top:30px;
+    }
+    #youtubePlayer{
+        min-width: 500px;
     }
 
 }

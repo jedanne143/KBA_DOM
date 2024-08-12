@@ -52,6 +52,7 @@ document.getElementById('createNote').addEventListener('click', function() {
         // Create and append note text element
         const text = document.createElement('p');
         text.textContent = noteText;
+        text.style.fontSize = "14px"
         note.appendChild(text);
 
         // Append the note to the note container

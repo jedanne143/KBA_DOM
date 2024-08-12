@@ -193,10 +193,11 @@ justify-content: center;
 }
 
 .note{
-    border-top: 1px solid brown;
+    display:flex;
+    flex-direction: column;
+    flex: 0 0 auto;
     border-bottom: 1px solid brown;
     padding-top:5px;
-    padding-bottom:5px;
     height: auto;
     width:auto;
     font-family: "Caveat", cursive;

@@ -7,7 +7,7 @@
   
     if (e.key === "Enter") {
         const name =nameInput.value;
-       document.getElementById("greetLine").innerHTML ="Hello " + name +"!";
+       document.getElementById('greetLine').innerHTML ="Hello " + name +"!";
        const dateToday = document.getElementById("currentDate")
        //function for formatted date
        function getDate() {
@@ -36,28 +36,40 @@ document.getElementById('createNote').addEventListener('click', function() {
 
         // Create note element
         const note = document.createElement('div');
-        note.classList.add('note');
+        note.classList.add('note-holder');
         
 
         // Create title
         const title = document.createElement('p');
-        title.classList.add('note-title');
+        title.classList.add('note');
         title.textContent = noteTitle;
-        title.style.fontWeight = "bold"
-        title.style.fontSize = "15px"
+        title.style.fontWeight = 'bold'
         note.appendChild(title);
+
+        //Create delete button
+        const deleteButton = document.createElement('button')
+        deleteButton.textContent = 'x';
+        title.appendChild(deleteButton)
+        deleteButton.style.fontWeight = 'bold'
+        deleteButton.className= 'deleteNote'
 
         // Create text
         const text = document.createElement('p');
         text.textContent = noteText;
-        text.style.fontSize = "14px"
+        text.classList.add('note');
         note.appendChild(text);
         addedNoteContainer.appendChild(note);
 
         // Clear input fields
         document.getElementById('noteTitle').value = '';
         document.getElementById('noteText').value = '';
+
+        deleteButton.addEventListener('click', function() {
+            addedNoteContainer.removeChild(note)
+        })
     } else {
         alert('Please enter both a title and a note.');
     }
 });
+
+

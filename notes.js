@@ -55,8 +55,6 @@ document.getElementById('createNote').addEventListener('click', function() {
         text.textContent = noteText;
         text.style.fontSize = "14px"
         note.appendChild(text);
-
-        // Append the note to the note container
         addedNoteContainer.appendChild(note);
 
         // Clear input fields
